@@ -6,6 +6,7 @@
 body{
     background-color: #fff;
 }
+
 /* =============== button =============== */
 .btn{
     font-weight: 500;
@@ -46,6 +47,16 @@ background: var(--primary);
 .section-title .text-end::after{
     display: none;
 }  
+
+/* =============== navbar-nav =============== */
+.navbar-nav .nav-link{
+    margin-right: 30px;
+    padding: 25px 0;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    outline: none;
+}
 
 /* ===============  Header section  ================ */
 
@@ -107,4 +118,95 @@ background: var(--primary);
 .service-item:hover h5,
 .service-item:hover p{
    color: #fff;
+}
+
+/* ================= testimonial section ===================== */
+
+.testimonial{
+    background: linear-gradient(rgba(15, 23,43,0.7) , rgba(15,23,43,0.7)), url(../image/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.testimonial-carousel{
+    padding-left: 65px;
+    padding-right: 65px;
+}
+.testimonial-carousel .testimonial-item {
+    padding: 30px;
+}
+
+.newsletter{
+    position: relative;
+    z-index: 1;
+}
+
+/* ================= footer section ==================== */
+
+.footer{
+    position: relative;
+    margin-top: -110px;
+    padding-top: 180px;
+    
+}
+.footer .row{
+    display: flex;
+}
+.footer .btn.btn-social{
+    margin-right: 5px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    border: 1px solid #fff;
+    border-radius: 35px;
+    transition: 0.3s;
+}
+ .footer a{
+     text-decoration: none;
+ }
+
+ .footer .btn.btn-link{
+     display: block;
+     margin-bottom: 5px;
+     padding: 0;
+     text-align: left;
+     color: #fff;
+     font-weight: normal;
+     text-transform: capitalize;
+     transition: 0.3s;
+ }
+
+ /* before */
+.footer .btn.btn-link::before{
+    position: relative;
+    content: '\f105';
+    font-family: "font Awesome 5 free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+.footer .btn.btn-link:hover{
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+.footer .copyright{
+    padding: 25px 0;
+    font-size: 15px;
+    border-top: 1px solid rgba(256, 256, 256, 0.10);
+}
+.footer.copyright a{
+    color: var(--light);
+}
+.footer .footer-menu a{
+margin-right: 15px;
+padding-right: 15px;
+border-right: 1px solid rgba(255, 255, 255, 0.3);
+color: #fff;
+}
+..footer .footer-menu a:last-child{
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
 }
